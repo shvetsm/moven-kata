@@ -17,3 +17,11 @@
     (is (= true (all-unique-ez? nil)))
     (is (= false (all-unique-ez? [1 2 3 4 5 4 2])))
     (is (= true (all-unique-ez? '(1 2 3 4 5))))))
+
+(deftest all-unique-eaziest
+  (testing "FIXME, I fail."
+    (is (= true (all-unique-eaziest? "Hey pa!")))
+    (is (= false (all-unique-eaziest? "Hi mom")))
+    (is (= true (all-unique-eaziest? nil)))
+    (is (= false (all-unique-eaziest? [1 2 3 4 5 4 2])))
+    (is (= true (all-unique-eaziest? '(1 2 3 4 5))))))

@@ -17,3 +17,9 @@
 
 (defn all-unique-ez? [seq]
   (= (count seq) (count (distinct seq))))
+
+(defn all-unique-eaziest?
+  [arg]
+  (if arg
+    (apply distinct? (seq arg))
+    true))
