@@ -23,3 +23,8 @@
   (if arg
     (apply distinct? (seq arg))
     true))
+
+(defn anagrams? [str1 str2]
+  (let [make-comparable (fn make-comparable [str]
+                          (sort (filter #(Character/isLetterOrDigit %) (seq (.toLowerCase str)))))]
+    (= (make-comparable str1) (make-comparable str2))))
